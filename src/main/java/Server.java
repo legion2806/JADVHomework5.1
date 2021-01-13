@@ -17,7 +17,7 @@ public class Server {
 
             int n = Integer.parseInt(in.readLine());
             int c = calculateFibonacci(n);
-            out.printf("Число Фибоначчи до номера %d -> %d\n", n, c);
+            out.printf("Число Фибоначчи номера %d = %d\n", n, c);
         } catch (IOException ex) {
             ex.printStackTrace(System.out);
         }
