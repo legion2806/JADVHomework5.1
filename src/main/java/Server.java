@@ -9,6 +9,8 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
 
+        // Blocking вариант был выбран так как до получения искомого значения работа программы должна останавливаться
+
         ServerSocket serverSocket = new ServerSocket(56000);
 
         try (Socket socket = serverSocket.accept();
